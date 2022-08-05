@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: finalexam.q4
+  name: finalexam.q6
   labels:
     app: finalexam
 spec:
