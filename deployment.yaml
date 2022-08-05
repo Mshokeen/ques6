@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finalexam.q4
+  labels:
+    app: finalexam
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: finalexam
+  template:
+    metadata:
+      labels:
+        app: finalexam
+    spec:
+      containers:
+        - name: html
+          image: mohit902/finalexam:v1
